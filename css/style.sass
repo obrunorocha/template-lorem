@@ -1,0 +1,224 @@
+*
+    font-family: 'Roboto', sans-serif
+    margin: 0
+    padding: 0
+
+html
+    scroll-behavior: smooth
+ul
+    list-style: none
+    margin-bottom: 0
+
+img
+    max-width: 100%
+    height: auto
+a
+    color: #000
+    text-decoration: none !important
+
+=flexbox
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-around
+    align-items: center
+
+header
+    +flexbox
+
+    .header-social
+        display: flex
+        li
+            padding: 10px
+            a
+                &:hover
+                    color: purple
+
+    .header-logo
+        font-size: 38px
+        font-weight: bold
+        text-transform: uppercase
+    nav
+        ul
+            display: inline-flex
+            li
+                padding: 5px
+                &:hover
+                    background-color: purple
+                    border-radius: 3px
+                    a
+                        width: 100%
+                        color: white
+.menu-toggle
+    color: #ffffff
+    font-size: 24px
+    cursor: pointer
+    display: none
+
+.page-header
+    display: flex
+    align-items: center
+    justify-content: center
+    .bg-header
+        position: absolute
+        width: 100%
+        height: 500px
+        background: linear-gradient(180deg,rgba(27,28,30,0) 0%,rgba(27,28,30,0.8) 80%)
+    img
+        width: 100%
+        height: 500px
+        object-fit: cover
+        object-position: center
+        background-repeat: no-repeat
+    
+    .title
+        position: absolute
+        font-size: 78px
+        color: #ffffff
+        padding: 20px
+        border-radius: 10px
+
+    .page-button
+        font-size: 20px
+        background-color: purple
+        color: white
+        border: none
+        position: absolute
+        margin-top: 190px
+        padding: 10px
+        border-radius: 5px
+        &:hover
+            background-color: white
+            color: purple
+
+.project-group
+    margin: 100px 0 100px 0
+
+.project-image
+    i.fas
+        font-size: 12em
+        color: purple       
+.project-title
+    font-size: 4em
+    
+.project-description
+    font-size: 1.3em
+
+.cards
+    margin: 100px 0 100px 0
+
+    .btn-purple
+        background-color: purple
+        color: #fff
+        border: 1px solid purple
+        &:hover
+            background-color: #fff
+            color: purple
+            border: 1px solid purple
+footer
+    .footer-title
+        color: purple
+        font-weight: bold
+        line-height: 1em
+    
+    .footer-social
+        display: flex
+        justify-content: space-between
+    .footer-logo
+        font-size: 30px
+        font-weight: bold
+        text-transform: uppercase
+        color: purple
+    a
+        &:hover
+            color: purple !important
+
+.gototopbtn
+    display: none
+    position: fixed
+    width: 50px
+    height: 50px
+    background: purple
+    border-radius: 5px
+    bottom: 30px
+    right: 20px
+    text-decoration: none
+    text-align: center
+    line-height: 50px
+    font-size: 22px
+    color: #fff
+    &:hover
+        background-color: #ffffff
+        color: purple
+        border: 1px solid purple
+
+@media (max-width: 768px)
+    header
+        position: fixed
+        background-color: #fff
+        left: 0
+        right: 0
+        box-shadow: 0 0 4px #000
+        z-index: 1
+
+        .header-social
+            display: none
+            position: absolute
+            top: 203px
+            left: 0
+            right: 0
+            z-index: 1
+            background-color: #fff
+            li
+                padding: 15px
+        
+        .menu
+            top: 57px
+            left: 0
+            right: 0
+            position: absolute
+            background-color: #fff
+            display: none
+            transform: translateY(-100%)
+            transition: transform 200ms linear
+            z-index: 1
+            padding: 10px 15px 10px 10px
+            li
+                &:before
+                    clear: both
+
+                &:hover > ul
+                    display: block
+                    top: 100%
+                    position: relative
+                    transform: none
+                    transition: none
+
+                    ul li
+                        width: 100%
+            
+        .menu_open
+            display: inherit
+            transform: translateY(0)
+        .menu-toggle
+            display: block
+            color: black
+
+    .page-header
+        .title
+            font-size: 65px
+            padding-bottom: 80px
+        .page-button
+            margin-top: 330px
+    
+    .project-image
+        display: grid
+        justify-items: center
+    .project-title
+        text-align: center
+    .card
+        margin-bottom: 20px
+
+    footer
+        .footer-group
+            margin: 10px 0 10px 0
