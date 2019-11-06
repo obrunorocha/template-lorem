@@ -184,12 +184,13 @@ footer .footer-title {
 }
 
 footer .footer-social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+footer .footer-social li {
+  padding-right: 15px;
 }
 
 footer .footer-logo {
