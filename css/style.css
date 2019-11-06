@@ -131,7 +131,7 @@ header nav ul li:hover a {
   color: white;
   border: none;
   position: absolute;
-  margin-top: 190px;
+  margin-top: 150px;
   padding: 10px;
   border-radius: 5px;
 }
@@ -289,7 +289,7 @@ footer a:hover {
     padding-bottom: 80px;
   }
   .page-header .page-button {
-    margin-top: 330px;
+    margin-top: 170px;
   }
   .project-image {
     display: -ms-grid;
