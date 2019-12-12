@@ -1,2 +1,2 @@
 # Template Lorem
-Este é um template criado usando HTML, CSS, Javascript usando a base da grid do Bootstrap
+Este é um template criado usando HTML, CSS, Javascript usando a base do grid do Bootstrap
